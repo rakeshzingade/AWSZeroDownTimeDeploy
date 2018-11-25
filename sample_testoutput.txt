@@ -1,0 +1,16 @@
+$ python zero-downtime-deploy.py -o ami-0f9cf087c1f27d9b1 -n ami-0ac019f4fcb7cb7e6
+All available instances with old ami:
+instance:  i-0038cba0e05977ab3 ami-id: ami-0f9cf087c1f27d9b1 AZ:  us-east-1c
+instance:  i-0be6238d31983f971 ami-id: ami-0f9cf087c1f27d9b1 AZ:  us-east-1b
+found elb:  mywebapp
+ec2 instance behind elb:  i-0038cba0e05977ab3
+ec2 instance behind elb:  i-0be6238d31983f971
+new instance launched: i-038a0d46d6405ea5b in AZ:  us-east-1c ImageID:  ami-0ac019f4fcb7cb7e6
+new instance launched: i-0de508c1e83e2aa96 in AZ:  us-east-1b ImageID:  ami-0ac019f4fcb7cb7e6
+registered  i-038a0d46d6405ea5b  to  mywebapp
+deploy successful, new instance-id =  i-038a0d46d6405ea5b  is healthy
+registered  i-0de508c1e83e2aa96  to  mywebapp
+deploy successful, new instance-id =  i-0de508c1e83e2aa96  is healthy
+terminated ec2 instance: i-0038cba0e05977ab3
+terminated ec2 instance: i-0be6238d31983f971
+
