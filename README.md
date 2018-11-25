@@ -3,7 +3,7 @@ IaaC used for deploying/upgrading AWS infrastructure
 
 ## Script details
 
-Suppose an web application is hosted on 3(or many) EC2 instances frontend by ELB. These instances are deployed in different AZs under one VPC. Considering this scenario we required zero downtime deploy script to upgrade the web application instance using new updated AMI-ID.
+Suppose the web application is hosted on EC2 instances frontend by ELB. These instances are deployed in different AZs under one VPC. Considering this scenario we required zero downtime deploy script to upgrade the web application instance using new updated AMI-ID.
 
 ## Pre-requisites to execute the script
 1. aws cli installed and configured
@@ -12,7 +12,7 @@ Suppose an web application is hosted on 3(or many) EC2 instances frontend by ELB
 ## Execution steps
 Execute the script as:
 	*python zero-downtime-deploy.py -o \<old ami-id\> -n \<new ami-id\>*
-	e.g.
+	*e.g.*
 	*python zero-downtime-deploy.py -o ami-0f9cf087c1f27d9b1 -n ami-0ac019f4fcb7cb7e6*
 Optional Parameter: -r, --region (default is set to 'us-east-1')
 And this will produce a flow chart:
