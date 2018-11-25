@@ -1,9 +1,6 @@
 # AWSZeroDownTimeDeploy
 IaaC used for deploying/upgrading AWS infrastructure
 
-# AWSZeroDownTimeDeploy
-IaaC used for deploying/upgrading AWS infrastructure
-
 ## Script details
 
 Suppose an web application is hosted on 3(or many) EC2 instances frontend by ELB. These instances are deployed in different AZs under one VPC. Considering this scenario we required zero downtime deploy script to upgrade the web application instance using new updated AMI-ID.
